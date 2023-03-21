@@ -1,2 +1,4 @@
-# security-with-jwt
-Both Authentication, Authorization handling using JWT.
+Both Authentication as well as Authorization have been handle using JWT.
+This is spring boot project develop using version 2.7.8.
+Java version - 11.
+Maven project.
