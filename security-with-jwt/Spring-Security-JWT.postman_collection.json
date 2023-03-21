@@ -1,0 +1,580 @@
+{
+	"info": {
+		"_postman_id": "00235c7a-b7c4-4e8d-9cfd-e408cc58e241",
+		"name": "Spring-Security-JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18326681"
+	},
+	"item": [
+		{
+			"name": "testCommonGetMethod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmFuZG9uIiwiZXhwIjoxNjc3MTM5NjEwLCJpYXQiOjE2NzcxMzkwMTB9.xJpjhxwwDhDVImDFV4R0Xdej0_x5LnA4nJTlMU4fdJob08S_e9CDaLa45QMuH6KiTvFDrrbmEekMdzqDTWoFGg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjbGllbnQiLCJleHAiOjE2NzcxMjI5NDAsImlhdCI6MTY3NzEyMjM0MH0.SshzOyqxjHgF-4MpjkeqF0cVKWlAnmXWJqpKnIMwy4K1IWlnjhGWXmAV9gv4SoCU_RyN5kRhFc4p_6zpjHMLpQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:1020/app/common/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"common",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testAdminClientGetMethod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmFuZG9uIiwiZXhwIjoxNjc3MTM5NjEwLCJpYXQiOjE2NzcxMzkwMTB9.xJpjhxwwDhDVImDFV4R0Xdej0_x5LnA4nJTlMU4fdJob08S_e9CDaLa45QMuH6KiTvFDrrbmEekMdzqDTWoFGg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY3NTQ2MDczOSwiaWF0IjoxNjc1NDQyNzM5fQ.Zhes1XqxdAO1KaC5U26K8u3ieC5ldwc64C90kiDWC23zKGwQw5yioROmn4IvDyv7JonsRtwNe2d9aUupeasAVQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:1020/app/admin-client/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"admin-client",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testAdminGetMethod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmFuZG9uIiwiZXhwIjoxNjc3MTM5NjEwLCJpYXQiOjE2NzcxMzkwMTB9.xJpjhxwwDhDVImDFV4R0Xdej0_x5LnA4nJTlMU4fdJob08S_e9CDaLa45QMuH6KiTvFDrrbmEekMdzqDTWoFGg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY3NzEyMzA4OSwiaWF0IjoxNjc3MTIyNDg5fQ.h7fKuOxQGoA-fKfihr6Enmt697ovSym4NIVyerFWYG8T0bmTrR2YtNcuufVDO431taEfhMLR1TOH2ujpNByYyQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:1020/app/admin/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"admin",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testDeleteMethod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmFuZG9uIiwiZXhwIjoxNjc3MTM5NjEwLCJpYXQiOjE2NzcxMzkwMTB9.xJpjhxwwDhDVImDFV4R0Xdej0_x5LnA4nJTlMU4fdJob08S_e9CDaLa45QMuH6KiTvFDrrbmEekMdzqDTWoFGg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:1020/app/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testClientGetMethod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYmFuZG9uIiwiZXhwIjoxNjc3MTM5NjEwLCJpYXQiOjE2NzcxMzkwMTB9.xJpjhxwwDhDVImDFV4R0Xdej0_x5LnA4nJTlMU4fdJob08S_e9CDaLa45QMuH6KiTvFDrrbmEekMdzqDTWoFGg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY3NTQ2MzIwMywiaWF0IjoxNjc1NDQ1MjAzfQ.ihhXpevH6s0urfCtu-TdYz60VixbJXpPQ6pwPrmP2LCAk-2VGA3iSFjoe-zqhGU73hHCNQQKKMlhv9KEWRn0gQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:1020/app/client/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"client",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userRegister - admin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin123\",\r\n    \"roles\":[\"ADMIN\"],\r\n    \"isAccountExpired\":0,\r\n    \"isAccountLocked\":0,\r\n    \"isCredentialsExpired\":0,\r\n    \"isEnabled\":1\r\n}\r\n//ADMIN,CLIENT",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1020/app/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userRegister - admin client",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin-client\",\r\n    \"password\":\"admin-client123\",\r\n    \"roles\":[\"ADMIN\",\"CLIENT\"],\r\n    \"isAccountExpired\":0,\r\n    \"isAccountLocked\":0,\r\n    \"isCredentialsExpired\":0,\r\n    \"isEnabled\":1\r\n}\r\n//ADMIN,CLIENT",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1020/app/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userRegister - abandon",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"abandon\",\r\n    \"password\":\"abandon123\",\r\n    \"roles\":[\"ABANDON\"],\r\n    \"isAccountExpired\":0,\r\n    \"isAccountLocked\":0,\r\n    \"isCredentialsExpired\":0,\r\n    \"isEnabled\":1\r\n}\r\n//ADMIN,CLIENT",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1020/app/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userRegister - client",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"client\",\r\n    \"password\":\"client123\",\r\n    \"roles\":[\"CLIENT\"],\r\n    \"isAccountExpired\":0,\r\n    \"isAccountLocked\":0,\r\n    \"isCredentialsExpired\":0,\r\n    \"isEnabled\":1\r\n}\r\n//ADMIN,CLIENT",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1020/app/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userAuthenticate - admin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"admin123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1020/app/user/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"user",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userAuthenticate - admin client",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin-client\",\r\n    \"password\":\"admin-client123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1020/app/user/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"user",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userAuthenticate - client",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"client\",\r\n    \"password\":\"client123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1020/app/user/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"user",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userAuthenticate - abandon",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"abandon\",\r\n    \"password\":\"abandon123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1020/app/user/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1020",
+					"path": [
+						"app",
+						"user",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
